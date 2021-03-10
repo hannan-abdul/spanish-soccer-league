@@ -1,19 +1,17 @@
 import React from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
+import './Header.css'
+import bannerImg from '../../images/stadium.jpg'
 
 const Header = () => {
     return (
-        <div>
-            <Jumbotron>
-                <h1>Hello, world!</h1>
-                    <p>
-                        This is a simple hero unit, a simple jumbotron-style component for calling
-                        extra attention to featured content or information.
-                    </p>
-                    <p>
-                        <Button variant="primary">Learn more</Button>
-                    </p>
-            </Jumbotron>
+        <div className="">
+            <div className="container header-fix">
+                <div className="position">
+                    <h2>Team Tracker</h2>
+                </div>
+            </div>
+            
         </div>
     );
 };

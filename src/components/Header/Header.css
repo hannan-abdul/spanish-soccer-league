@@ -1,0 +1,18 @@
+.header-fix{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../../images/stadium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+}
+/* .jumbotron{
+    padding: 0px !important;
+} */
+.position{
+    position:absolute;
+    transform: translate(35%, 35%);
+    color: #fff;
+    top: 35%;
+    left: 35%;
+}

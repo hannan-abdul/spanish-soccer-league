@@ -2,20 +2,22 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
+import './Leagues.css'
 
 const Leagues = (props) => {
-    const {idLeague, strLeague, strSport} = props.league;
+    const {idTeam, strTeamBadge, strLeague, strSport} = props.league;
 
     const history = useHistory();
-    const exploreLeague = (idLeague) =>{
-        const url = `/league/${idLeague}`;
+    const exploreLeague = (idTeam) =>{
+        const url = `/league/${idTeam}`;
         history.push(url)
     }
     return (
         <div>
-            <h3>{strLeague} </h3>
-            <h5>Sports Type: {strSport} </h5>
-            <button className="btn-primary" onClick={()=>exploreLeague(idLeague)}>Explore <FontAwesomeIcon icon={faArrowRight} /></button>
+            <img className="logo-resize" src={strTeamBadge} alt="logo"/>
+            <h4>{strLeague} </h4>
+            <h6>Sports Type: {strSport} </h6>
+            <button className="btn-primary" onClick={()=>exploreLeague(idTeam)}>Explore <FontAwesomeIcon icon={faArrowRight} /></button>
         </div>
     );
 };

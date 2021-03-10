@@ -1,0 +1,30 @@
+.gender-image{
+    width: 60%;
+}
+.team-details-row{
+    background-color: tomato;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+}
+.team-details{
+    text-align: left;
+}
+.header-fix{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(../../images/stadium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40vh;
+    position: relative;
+}
+.logo-position{
+    position:absolute;
+    transform: translate(35%, 20%);
+    color: #fff;
+    top: 10%;
+    left: 10%;
+}
+.logo-position img{
+    width: 25%;
+}

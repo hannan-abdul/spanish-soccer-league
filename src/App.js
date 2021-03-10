@@ -14,22 +14,23 @@ import Header from './components/Header/Header';
 function App() {
   return (
     <div className="App" >
+      <div className="container">
       <Router>
-        <Header></Header>
         <div>
           <Switch>
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/league/:idLeague">
+            <Route path="/league/:idTeam">
               <LeagueDetail />
             </Route>
             <Route path="/dashboard">
-
+              
             </Route>
           </Switch>
         </div>
       </Router>
+      </div>
     </div>
   );
 }
