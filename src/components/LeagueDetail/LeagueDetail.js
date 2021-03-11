@@ -14,7 +14,7 @@ const LeagueDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setLeague(data.teams[0]))
-    }, [])
+    }, [idTeam])
     return (
         <div className="container">
             <div className="header-fix">

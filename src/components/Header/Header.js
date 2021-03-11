@@ -1,7 +1,5 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
 import './Header.css'
-import bannerImg from '../../images/stadium.jpg'
 
 const Header = () => {
     return (
