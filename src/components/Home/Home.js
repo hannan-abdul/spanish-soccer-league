@@ -19,7 +19,7 @@ const Home = () => {
                 <div className="row justify-content-center">
                     {
                         leagues.map(league=> 
-                        <div className="col-lg-3 card card-fix"> 
+                        <div className="col-lg-3 col-md-6 col-sm-12 card card-fix"> 
                             <Leagues league={league}></Leagues>
                             </div>)
                     }

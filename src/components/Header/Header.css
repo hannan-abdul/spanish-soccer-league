@@ -6,9 +6,6 @@
     height: 40vh;
     position: relative;
 }
-/* .jumbotron{
-    padding: 0px !important;
-} */
 .position{
     position:absolute;
     transform: translate(35%, 35%);
