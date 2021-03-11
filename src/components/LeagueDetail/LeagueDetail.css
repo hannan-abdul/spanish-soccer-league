@@ -1,0 +1,56 @@
+.gender-image{
+    width: 70%;
+}
+@media (max-width: 1199px){
+    .gender-image{
+      width: 80%;
+  }
+  }
+  @media (max-width: 991px){
+    .gender-image{
+      width: 100%;
+  }
+  .team-details{
+    text-align: left;
+}
+    .team-details h2{
+        font-size: 20px;
+    }
+    .team-details h6{
+        font-weight: 400;
+    }
+  }
+  @media (max-width: 767px){
+    .team-details h2{
+        font-size: 25px;
+    }
+    .logo-position img {
+        width: 75% !important;
+    }
+  }
+
+.team-details-row{
+    background-color: tomato;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px 30px !important;
+    align-items: center;
+}
+.team-details{
+    text-align: left;
+}
+.more-details{
+    margin: 10px 30px;
+    text-align: left;
+}
+.logo-position{
+    position:absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+}
+.logo-position img{
+    width: 25%;
+}

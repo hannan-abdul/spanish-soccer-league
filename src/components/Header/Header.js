@@ -6,7 +6,7 @@ const Header = () => {
         <div className="">
             <div className="container header-fix">
                 <div className="position">
-                    <h2>Team Tracker</h2>
+                    <h2>SPANISH SOCCER LEAGUES</h2>
                 </div>
             </div>
             

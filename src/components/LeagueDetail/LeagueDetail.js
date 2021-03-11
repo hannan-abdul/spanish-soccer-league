@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlag, faFutbol, faMapMarkerAlt, faMars } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from 'react-router';
 import maleImage from '../../images/Photo/male.png';
-import './LeagueDetai.css'
+import './LeagueDetail.css'
 import SocialIcon from '../SocialIcon/SocialIcon';
 
 const LeagueDetail = () => {
@@ -23,14 +23,14 @@ const LeagueDetail = () => {
                 </div>
             </div>
             <div className="row team-details-row">
-                <div className="col team-details">
+                <div className="col-lg-6 col-md-6 col-sm-12 team-details">
                     <h2>{league.strLeague}</h2>
                     <h6><FontAwesomeIcon icon={faMapMarkerAlt} /> Founded: {league.intFormedYear}</h6>
                     <h6><FontAwesomeIcon icon={faFlag} /> Country: {league.strCountry}</h6>
                     <h6><FontAwesomeIcon icon={faFutbol} /> Sports Type: {league.strSport}</h6>
                     <h6><FontAwesomeIcon icon={faMars} /> Gender: {league.strGender}</h6>
                 </div>
-                <div className="col">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                     {/* if({league.strGender} === male){
                         <img className='gender-image' src={maleImage} alt=""/>
                     } */}

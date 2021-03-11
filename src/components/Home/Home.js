@@ -14,7 +14,6 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <h2>All Leagues: {leagues.length}</h2>
             <div className="container">
                 <div className="row justify-content-center">
                     {
