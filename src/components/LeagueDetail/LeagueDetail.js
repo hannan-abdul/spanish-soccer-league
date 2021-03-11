@@ -9,12 +9,16 @@ import SocialIcon from '../SocialIcon/SocialIcon';
 const LeagueDetail = () => {
     const { idTeam } = useParams();
     const [league, setLeague] = useState({})
+    
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${idTeam}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setLeague(data.teams[0]))
     }, [idTeam])
+
+    const {intFormedYear, strCountry, strSport, strGender} = league;
+
     return (
         <div className="container">
             <div className="header-fix">
@@ -25,10 +29,10 @@ const LeagueDetail = () => {
             <div className="row team-details-row">
                 <div className="col-lg-6 col-md-6 col-sm-12 team-details">
                     <h2>{league.strLeague}</h2>
-                    <h6><FontAwesomeIcon icon={faMapMarkerAlt} /> Founded: {league.intFormedYear}</h6>
-                    <h6><FontAwesomeIcon icon={faFlag} /> Country: {league.strCountry}</h6>
-                    <h6><FontAwesomeIcon icon={faFutbol} /> Sports Type: {league.strSport}</h6>
-                    <h6><FontAwesomeIcon icon={faMars} /> Gender: {league.strGender}</h6>
+                    <h6><FontAwesomeIcon icon={faMapMarkerAlt} /> Founded: {intFormedYear}</h6>
+                    <h6><FontAwesomeIcon icon={faFlag} /> Country: {strCountry}</h6>
+                    <h6><FontAwesomeIcon icon={faFutbol} /> Sports Type: {strSport}</h6>
+                    <h6><FontAwesomeIcon icon={faMars} /> Gender: {strGender}</h6>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12">
                     {/* if({league.strGender} === male){
