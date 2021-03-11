@@ -1,6 +1,31 @@
 .gender-image{
     width: 70%;
 }
+.team-details-row{
+    background-color: #82ccdd;
+    color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px 30px !important;
+    align-items: center;
+}
+.team-details{
+    text-align: left;
+}
+.more-details{
+    margin: 10px 30px;
+    text-align: left;
+}
+.logo-position{
+    position:absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+}
+.logo-position img{
+    width: 25%;
+}
 @media (max-width: 1199px){
     .gender-image{
       width: 80%;
@@ -28,29 +53,3 @@
         width: 75% !important;
     }
   }
-
-.team-details-row{
-    background-color: tomato;
-    color: #fff;
-    padding: 15px;
-    border-radius: 15px;
-    margin: 20px 30px !important;
-    align-items: center;
-}
-.team-details{
-    text-align: left;
-}
-.more-details{
-    margin: 10px 30px;
-    text-align: left;
-}
-.logo-position{
-    position:absolute;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    top: 50%;
-    left: 50%;
-}
-.logo-position img{
-    width: 25%;
-}

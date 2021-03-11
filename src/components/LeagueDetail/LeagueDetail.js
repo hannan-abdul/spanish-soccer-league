@@ -9,13 +9,13 @@ import SocialIcon from '../SocialIcon/SocialIcon';
 
 const LeagueDetail = () => {
     const { idTeam } = useParams();
-    const [league, setLeague] = useState({})
-    const {intFormedYear, strCountry, strSport, strGender, strTeamBadge, strLeague,} = league;
+    const [team, setTeam] = useState({})
+    const {intFormedYear, strCountry, strSport, strGender, strTeamBadge, strLeague,} = team;
     useEffect(() => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${idTeam}`;
         fetch(url)
             .then(res => res.json())
-            .then(data => setLeague(data.teams[0]))
+            .then(data => setTeam(data.teams[0]))
     }, [idTeam])
     
     let image;

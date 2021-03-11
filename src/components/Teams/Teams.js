@@ -2,14 +2,14 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
-import './Leagues.css'
+import './Teams.css'
 
 const Leagues = (props) => {
-    const {idTeam, strTeamBadge, strLeague, strSport} = props.league;
+    const {idTeam, strTeamBadge, strLeague, strSport} = props.team;
 
     const history = useHistory();
     const exploreLeague = (idTeam) =>{
-        const url = `/league/${idTeam}`;
+        const url = `/team/${idTeam}`;
         history.push(url)
     }
     return (
